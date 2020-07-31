@@ -9,8 +9,9 @@ body {font-family: Optima, sans-serif;
 
 p{font-size:20px}
 
-input{height:20px;
-	font-size:20px}
+input[type='text']{font-size:20px;
+display:inline-block
+padding:10px 10px}
 
 .method{
 	border: 1px solid green ;
@@ -23,9 +24,10 @@ input{height:20px;
   border-radius: 10px;
   
 }
-.button{height:20px;
+.button{
 	font-size:20px;
 	border-radius: 10px;
+	padding:10px 10px
 
 	
 }
