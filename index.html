@@ -1,180 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>JS String Methods Cheat Sheet</title>
-
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" type="text/css" rel="stylesheet">
- 
-  
-  
-</head>
-
-
-<body>
-  
-      
-  <h1>Javascript string methods cheat sheet</h1>
-  <h2>Who knew strings could be so fascinating!</h2>
-    <img src ="cat.jpeg" style="width:100%;">  
-    <br>
-    <br>
-
- <div class = 'method'>
-    <form id="toLowerCase">
-      <h3>.toLowerCase():</h3>
-      <p>Write something in the input box below, make sure it contains at least one uppercase letter, and then click the button and watch the JS magic begin!</p>
-        <p>Type in the input box below:</p><br><br> let string =
-        <input type="text" name="name" maxlength="50">
-     
-      <div><br>
-        <button class="button" id="submit" type="submit" name="submit" value="=" onclick="toLowerCaseFunc()">
-          string.toLowerCase() </button></div>
-    </form>
-    <p>returns:</p>
-    <p id="resultToLowerCase"><br></p>
-  </div>
-
-
-
-<br>
-
-
-<div class='method'>
-  <form id="toUpperCase">
-  <h3>.toUpperCase():</h3>
-  Now write something in this box, but (and this part is very important) it MUST contain at least one lowercase letter.<br><br>Type in the input box below:<br><br>
-  let string = <input type="text" name="name" maxlength="50">
-    <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="toUpperCaseFunc()">string.toUpperCase()</button></p>
-  </form>
-  <p>returns:</p>
-  <p id="demoToUpperCase"><br></p>
-</div>
-
-
-<br>
-
-
-<div class='method'>
-  <form id="trim">
-  <h3>.trim():</h3>
-  Now write something in this box, and put some spaces before and after the text, and see what trim() does.<br><br>Type in the input box below:<br><br>
-  let string = <input type="text" name="name" maxlength="50">
-    <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="trimFunc()">string.trim()</button></p>
-  </form>
-  <p>returns:</p>
-   <p id="demoTrim"><br><br><br></p>
-  
-</div>
-
-
-<br>
-
-
-<div class = 'method'><form id="length">
-  <h3>.length():</h3>
-  Write something in the box below and the length method will tell you how long it is (ie how many characters it has)<br><br>Type in the input box below:<br><br>
-  let string = <input type="text" name="name" maxlength="50">
-    <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="lengthFunc()">string.length()</button></p>
-  </form>
-  <p>returns:</p>
-  <p id="demoLength"><br></p>
-    
-</div>
-
-
-<br>
-
-
-
-<div class = 'method'><form id="repeat">
-  <h3>.repeat(required parameter 1):</h3>
-  The repeat function simply repeats a string a specified number of times. Unlike the methods above, the repeat method is passed an argument. This is how you specify the number of times the string is to be repeated. In this example the argument is saved as a variable called repeatThisNumberOfTimes. Put a number in this box to see the string repeated.<br><br>Type in the input boxes below:<br><br>
-  let string = <input type="text" name="name1" maxlength="50"><br>
-  let repeatThisManyTimes = <input type="text" name="name2" maxlength="50">
-    <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="repeat()">string.repeat(repeatThisManyTimes)</button></p>
-  </form>
-  <p>returns:</p>
-  <p id="demoRepeat"><br></p>
-    
-</div>
-<br>
-<div class = 'method'>
-    <form id="charAt">
-      <h3>.charAt(required parameter 1):</h3>
-      <p>This method returns a character at a given index. The required index is passed to the method as an argument (in this example, you can decide the required index by storing it as a variable returnCharacterAtThisIndex)</p>
-      <p>Type in the input boxes below:<br><br> let string =     
-        <input type="text" name="name1" maxlength="50"><br>let returnCharacterAtThisIndex = <input type="text" name="name2" maxlength="50"></p>
-     
-      <p>
-        <button class="button" id="submit" type="submit" name="submit" value="=" onclick="charAt()">
-          string.charAt(returnCharacterAtThisIndex) </button></p>
-    </form>
-    <p>returns:</p>
-    <p id="resultCharAt"><br></p>
-  </div>
-<br>
-<div class = 'method'>
-    <form id="concat">
-      <h3>.concat(required parameter 1, optional further parameters):</h3>
-      <p>This method adds (or concatenates) two strings together. The string to be added is passed to the method as an argument (in this example, stored in the variable secondString). In fact, the concat method can take an unlimited number of arguments; each new argument will be added to the original string. However, in this example we will pass just one argument, and so add just one string.</p>
-      <p>Type in the input boxes below:<br><br> let string =     
-        <input type="text" name="name1" maxlength="50"><br>let secondString = <input type="text" name="name2" maxlength="50"></p>
-     
-      <p>
-        <button class="button" id="submit" type="submit" name="submit" value="=" onclick="concat()">
-          string.concat(secondString) </button></p>
-    </form>
-    <p>returns:</p>
-    <p id="resultConcat"><br></p>
-  </div>
-<br>
-<div class = 'method'>
-    <form id="indexOf">
-      <h3>.indexOf(required parameter 1, optional parameter 2):</h3>
-      <p>This method returns the first index at which given characters can be found in the string. So, in the example below, you might type 'It was the best of times, it was the worst of times' in the string box, and type 'worst' in the searchFor box. 37 will be the returned value as 'worst' appears at index 37 of the string. Try yourself with different strings:</p>
-      <p>Type in the input boxes below:<br><br> let string =     
-        <input type="text" name="name1" maxlength="50"><br>let searchFor = <input type="text" name="name2" maxlength="50"></p>
-     
-      <p>
-        <button class="button" id="submit" type="submit" name="submit" value="=" onclick="indexOf()">
-          string.indexOf(searchFor) </button></p>
-    </form>
-    <p>returns:</p>
-    <p id="resultIndexOf"><br></p>
-  </div>
-
-<br>
-  
-  <div class = 'method'>
-    <form id="replace">
-      <h3>.replace(required parameter 1, required parameter 2):</h3>
-      <p>This method takes a string, then searchs for a given element inside that string (the method's first argument, in this example saved as variable outWithTheOld), and replaces it with another given element (the method's second argument, in this example saved as the variable inWithTheNew). So, for starters, try typing 'I hate coding' in the first box, 'hate' in the second box, and 'love' in the third box, and see what is returned. Then try with your own strings and arguments. </p>
-      <p>Type in the input boxes below:<br><br> let string =     
-        <input type="text" name="name1" maxlength="50"><br>let outWithTheOld = <input type="text" name="name2" maxlength="50"><br>let inWithTheNew = <input type="text" name="name3" maxlength="50"></p>
-     
-      <p>
-        <button class="button" id="submit" type="submit" name="submit" value="=" onclick="replace()">
-          string.replace(outWithTheOld,inWithTheNew) </button></p>
-    </form>
-    <p>returns:</p>
-    <p id="resultReplace"><br></p>
-  </div>
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="script.js"></script>
-
-
-
-
-
-
-</body>
+   <head>
+      <title>JS String Methods Cheat Sheet</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/bootstrap3.3.7.css">
+      <link href="css/style.css" type="text/css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+            <h1>Javascript string methods cheat sheet</h1>
+            <h2>Who knew strings could be so fascinating!</h2>
+            <img src ="images/cat.jpeg" style="width:100%;">  
+            <br>
+            <br>
+            <div class = 'method'>
+               <form id="toLowerCase">
+                  <h3>.toLowerCase():</h3>
+                  <p>Write something in the input box below, make sure it contains at least one uppercase letter, and then click the button and watch the JS magic begin!</p>
+                  <p>Type in the input box below:</p>
+                  <br><br> let string =
+                  <input type="text" name="name" maxlength="50">
+                  <div><br>
+                     <button class="button" id="submit" type="submit" name="submit" value="=" onclick="toLowerCaseFunc()">
+                     string.toLowerCase() </button>
+                  </div>
+               </form>
+               <p>returns:</p>
+               <p id="resultToLowerCase"><br></p>
+            </div>
+            <br>
+            <div class='method'>
+               <form id="toUpperCase">
+                  <h3>.toUpperCase():</h3>
+                  Now write something in this box, but (and this part is very important) it MUST contain at least one lowercase letter.<br><br>Type in the input box below:<br><br>
+                  let string = <input type="text" name="name" maxlength="50">
+                  <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="toUpperCaseFunc()">string.toUpperCase()</button></p>
+               </form>
+               <p>returns:</p>
+               <p id="demoToUpperCase"><br></p>
+            </div>
+            <br>
+            <div class='method'>
+               <form id="trim">
+                  <h3>.trim():</h3>
+                  Now write something in this box, and put some spaces before and after the text, and see what trim() does.<br><br>Type in the input box below:<br><br>
+                  let string = <input type="text" name="name" maxlength="50">
+                  <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="trimFunc()">string.trim()</button></p>
+               </form>
+               <p>returns:</p>
+               <p id="demoTrim"><br><br><br></p>
+            </div>
+            <br>
+            <div class = 'method'>
+               <form id="length">
+                  <h3>.length():</h3>
+                  Write something in the box below and the length method will tell you how long it is (ie how many characters it has)<br><br>Type in the input box below:<br><br>
+                  let string = <input type="text" name="name" maxlength="50">
+                  <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="lengthFunc()">string.length()</button></p>
+               </form>
+               <p>returns:</p>
+               <p id="demoLength"><br></p>
+            </div>
+            <br>
+            <div class = 'method'>
+               <form id="repeat">
+                  <h3>.repeat(required parameter 1):</h3>
+                  The repeat function simply repeats a string a specified number of times. Unlike the methods above, the repeat method is passed an argument. This is how you specify the number of times the string is to be repeated. In this example the argument is saved as a variable called repeatThisNumberOfTimes. Put a number in this box to see the string repeated.<br><br>Type in the input boxes below:<br><br>
+                  let string = <input type="text" name="name1" maxlength="50"><br>
+                  let repeatThisManyTimes = <input type="text" name="name2" maxlength="50">
+                  <p><button class="button" id="submit" type="submit" name="submit" value="=" onclick="repeat()">string.repeat(repeatThisManyTimes)</button></p>
+               </form>
+               <p>returns:</p>
+               <p id="demoRepeat"><br></p>
+            </div>
+            <br>
+            <div class = 'method'>
+               <form id="charAt">
+                  <h3>.charAt(required parameter 1):</h3>
+                  <p>This method returns a character at a given index. The required index is passed to the method as an argument (in this example, you can decide the required index by storing it as a variable returnCharacterAtThisIndex)</p>
+                  <p>Type in the input boxes below:<br><br> let string =     
+                     <input type="text" name="name1" maxlength="50"><br>let returnCharacterAtThisIndex = <input type="text" name="name2" maxlength="50">
+                  </p>
+                  <p>
+                     <button class="button" id="submit" type="submit" name="submit" value="=" onclick="charAt()">
+                     string.charAt(returnCharacterAtThisIndex) </button>
+                  </p>
+               </form>
+               <p>returns:</p>
+               <p id="resultCharAt"><br></p>
+            </div>
+            <br>
+            <div class = 'method'>
+               <form id="concat">
+                  <h3>.concat(required parameter 1, optional further parameters):</h3>
+                  <p>This method adds (or concatenates) two strings together. The string to be added is passed to the method as an argument (in this example, stored in the variable secondString). In fact, the concat method can take an unlimited number of arguments; each new argument will be added to the original string. However, in this example we will pass just one argument, and so add just one string.</p>
+                  <p>Type in the input boxes below:<br><br> let string =     
+                     <input type="text" name="name1" maxlength="50"><br>let secondString = <input type="text" name="name2" maxlength="50">
+                  </p>
+                  <p>
+                     <button class="button" id="submit" type="submit" name="submit" value="=" onclick="concat()">
+                     string.concat(secondString) </button>
+                  </p>
+               </form>
+               <p>returns:</p>
+               <p id="resultConcat"><br></p>
+            </div>
+            <br>
+            <div class = 'method'>
+               <form id="indexOf">
+                  <h3>.indexOf(required parameter 1, optional parameter 2):</h3>
+                  <p>This method returns the first index at which given characters can be found in the string. So, in the example below, you might type 'It was the best of times, it was the worst of times' in the string box, and type 'worst' in the searchFor box. 37 will be the returned value as 'worst' appears at index 37 of the string. Try yourself with different strings:</p>
+                  <p>Type in the input boxes below:<br><br> let string =     
+                     <input type="text" name="name1" maxlength="50"><br>let searchFor = <input type="text" name="name2" maxlength="50">
+                  </p>
+                  <p>
+                     <button class="button" id="submit" type="submit" name="submit" value="=" onclick="indexOf()">
+                     string.indexOf(searchFor) </button>
+                  </p>
+               </form>
+               <p>returns:</p>
+               <p id="resultIndexOf"><br></p>
+            </div>
+            <br>
+            <div class = 'method'>
+               <form id="replace">
+                  <h3>.replace(required parameter 1, required parameter 2):</h3>
+                  <p>This method takes a string, then searchs for a given element inside that string (the method's first argument, in this example saved as variable outWithTheOld), and replaces it with another given element (the method's second argument, in this example saved as the variable inWithTheNew). So, for starters, try typing 'I hate coding' in the first box, 'hate' in the second box, and 'love' in the third box, and see what is returned. Then try with your own strings and arguments. </p>
+                  <p>Type in the input boxes below:<br><br> let string =     
+                     <input type="text" name="name1" maxlength="50"><br>let outWithTheOld = <input type="text" name="name2" maxlength="50"><br>let inWithTheNew = <input type="text" name="name3" maxlength="50">
+                  </p>
+                  <p>
+                     <button class="button" id="submit" type="submit" name="submit" value="=" onclick="replace()">
+                     string.replace(outWithTheOld,inWithTheNew) </button>
+                  </p>
+               </form>
+               <p>returns:</p>
+               <p id="resultReplace"><br></p>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   </body>
 </html>
